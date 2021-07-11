@@ -1,0 +1,138 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns:7fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header aside";
+    height: 100vh;
+    }
+
+header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background:linear-gradient(30deg, blue,rgb(32, 30, 134), rgb(72, 91, 150), rgb(82, 83, 141), rgb(141, 141, 141));
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    
+}
+aside {
+    display: grid;
+    justify-items: center;
+    align-items: flex-start;
+    background-color: blue;
+    grid-template-columns: 1fr;
+    grid-area: aside;
+
+}
+
+form {
+    margin: 0 auto;
+    width: 280px;
+    padding: 1em;
+    border: 1px solid rgb(2, 2, 2);
+    border-radius: 1em;
+    font-style: italic;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 5;
+    margin: 5;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    font: 1em sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+   
+    border-color: #000;
+  }
+  
+  textarea {
+    
+    vertical-align: top;
+    height: 8em;
+  }
+  
+  .button {
+    padding-left: 10px; 
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  
+  .sidebar{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    background-color: slategray;
+    color: snow;
+    outline: 1px solid black;
+   
+  }
+
+  .sidebar h2{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(0, 9, 128) ;
+  }
+  .sidebar ul{
+    color: royalblue;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar li:hover {
+    background: rgb(98, 183, 240);
+    transition: all;
+    transition-duration: 0.9s;
+    cursor: pointer;
+ }
+
+ .sidebar li{
+  outline: 1px solid rgb(38, 32, 99);
+  height: 55px;
+  margin-left: 5px;
+}
+ 
+.open-menu {
+  padding-left: 10px; 
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    background-color: rgb(74, 74, 158);
+}
+  
+  button {
+    background-color: blue;
+    padding: 0;
+    margin: 0;
+  }
+
+ 
